@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanGo AI</title>
+
+    <style>
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        h2 {
+            color: #2196f3;
+        }
+
+        /* Header */
+        header {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1600");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 60px;
+        }
+
+        header p {
+            font-size: 28px;
+            margin-top: 15px;
+        }
+
+        /* Form */
+        .form-container {
+            width: 70%;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        /* Features */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        /* Destinations */
+        .destinations {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .destination-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .destination {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .destination:hover {
+            transform: scale(1.03);
+            transition: 0.3s;
+        }
+
+        .destination img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> PlanGo AI</h1>
+        <p>Your Smart Travel Companion</p>
+    </header>
+
+    <div class="form-container">
+        <h2>Travel Planner</h2>
+
+        <label>Destination City</label>
+        <input type="text" placeholder="e.g. Paris">
+
+        <label>Number of Days</label>
+        <input type="number" placeholder="e.g. 5">
+
+        <label>Number of Travelers</label>
+        <input type="number" placeholder="e.g. 2">
+
+        <label>Budget (€)</label>
+        <input type="number" placeholder="e.g. 500">
+
+        <label>Travel Style</label>
+        <select>
+            <option>Budget</option>
+            <option>Standard</option>
+            <option>Luxury</option>
+        </select>
+
+        <label>Travel Interests</label>
+        <select>
+            <option>Beach</option>
+            <option>Adventure</option>
+            <option>Culture</option>
+            <option>Food</option>
+            <option>Nature</option>
+        </select>
+        <button>Generate Travel Itinerary</button>
+    </div>
+
+    <section class="features">
+        <div class="card">
+            <h3>🌍 Destination Ideas</h3>
+            <p>Get travel recommendations based on your interests.</p>
+        </div>
+
+        <div class="card">
+            <h3>💰 Budget Planning</h3>
+            <p>Travel smarter with AI budget suggestions.</p>
+        </div>
+
+        <div class="card">
+            <h3>📅 Daily Itinerary</h3>
+            <p>Create a personalized travel plan for every day.</p>
+        </div>
+    </section>
+
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+
+        <div class="destination-cards">
+            <div class="destination">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500" alt="Paris">
+                <h3>Paris</h3>
+            </div>
+
+            <div class="destination">
+                <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=500" alt="Tokyo">
+                <h3>Tokyo</h3>
+            </div>
+
+            <div class="destination">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500" alt="Bali">
+                <h3>Bali</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>WanderWorld AI - AWS GenAI Project 2026</p>
+        <p>Created by Heshani & Team</p>
+    </footer>
+
+</body>
+
+</html>
